@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Asap", sans-serif;
+  background-color: #F4EDE3;
+}
+
+/* HEADER */
+
+.header-container {
+  background-color: #A8D5BA;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 100px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.header-principal {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.youtube-logo {
+  width: 90px;
+  height: 20px;
+}
+
+.support {
+  display: flex;
+  align-items: center;
+}
+
+.support-logo {
+  width: 80px;
+  height: 80px;
+}
+
+.support-text {
+  color: #688C78;
+}
+
+.search-container {
+  display: flex;
+}
+
+.search-container input {
+  width: 348px;
+  height: 40px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+}
+
+.search-container button {
+  width: 57px;
+  height: 40px;
+  border: none;
+  background-color: #2E4E3F;
+  border-radius: 0 8px 8px 0;
+}
+
+.header-profile {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.profile {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* MAIN */
+
+.main-container {
+  margin: 28px 16px 25px 75px;
+  display: flex;
+  gap: 25px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 952px;
+}
+
+.main-video {
+  border-radius: 24px;
+  width: 952px;
+  height: 537px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.main-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+
+.channel-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.main-channel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.channel-infos {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+p {
+  color: #5E5E5E;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.subscribe-button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #2E4E3F;
+  padding: 12px 36px;
+  border-radius: 2px;
+  border: transparent;
+  cursor: pointer; 
+}
+
+.main-info {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.main-info p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h3, h4 {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-description {
+  width: 50%;
+}
+
+.content-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.video-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.video-channel {
+  border-radius: 16px;
+  width: 160px;
+  height: 90px;
+}
+
+.video-container p {
+  color: #515151;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.video-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@keyframes balancarFolha {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  75% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.folha {
+  align-self: center;
+  width: 160px;
+  animation: balancarFolha 4s infinite ease-in-out;
+}
+
+@keyframes voarPassaro {
+  0% {
+    left: -50px;
+    top: 50px;
+  }
+
+  100% {
+    left: 100%;
+    top: 100px;
+  }
+}
+
+.passaro {
+  position: absolute;
+  width: 80px;
+  animation: voarPassaro 10s linear infinite;
+}
